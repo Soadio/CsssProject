@@ -1,8 +1,15 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root{
+    font-family: "roboto";
+}
+
 *{
     margin: 0;
-    padding: 0;
+    /*padding: 0;*/
     box-sizing: border-box;
 }
+
 
 body{
     background-image: url(coral.png);
@@ -14,8 +21,8 @@ nav{
     background-color: #ad7753;
     display: flex;
     justify-content: space-around;
-    min-height: 8vh;
-    font-family: arial;
+    
+    font-family: "roboto";
     align-items: center;
 }
 
@@ -24,6 +31,18 @@ nav{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+    
+}
+
+p4{
+    margin-left: 0px;
+}
+
+#nav-profile img{
+    width: 60px;
+    margin: 10px;
+    border-radius: 50%;
+
 }
 
 .nav-links{
@@ -95,18 +114,49 @@ nav{
     }
 }
 
-.nav-active{
-    transform: translateX(0%);
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    padding: 30px;
+    margin-bottom: 0;
+    
+    align-items:center ;
 }
 
-.close .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
+.footer .container {
+   
+    min-width: 30px;
+    display: grid;
+    font-family: "roboto";
+    grid-template-rows: 2px auto;
+    text-decoration: none;
+    gap: 1px;
+    justify-items: center;
+  }
 
-.close .line2{
-    opacity: 0;
-}
+.footer a {
+    color: white;
+  }
 
-.close .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
-}
+
+  .footer__social a {
+    display: inline-block;
+    height: 1.25rem;
+  }
+
+  .footer__links {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-between;
+    align-content: start;
+    text-decoration: none;
+  }
